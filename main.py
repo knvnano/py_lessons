@@ -1,3 +1,5 @@
+#Function VAT
+
 def get_vat(payment, percent=20):
     try:
         payment = float(payment)
@@ -6,6 +8,7 @@ def get_vat(payment, percent=20):
         return "Sum VAT: {}".format(vat)
     except TypeError:
         return "CANT COUNT"
+
 
 
 result = get_vat(400, 12)
